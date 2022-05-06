@@ -44,7 +44,11 @@ function LoginForm({ Login, error, CreateUser }) {
         //         console.log(response);
 
         // });
-        
+        console.log({
+            username: usernameReg,
+            password: passwordReg,
+            premium: premiumReg,
+        });
         Axios.post("https://cooking-2-go.netlify.app/api/users", {
             username: usernameReg,
             password: passwordReg,
