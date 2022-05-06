@@ -95,7 +95,7 @@ function LoginForm({ Login, error, CreateUser }) {
         <form onSubmit={submitHandler}>
             <div className="form-inner">
                 <h2>Create an Account</h2>
-                {(error != "") ? ( <div className="error">{error}</div> ) : ""}
+                {(error !== "") ? ( <div className="error">{error}</div> ) : ""}
                 <div className="form-group">
                     <label htmlFor="email">Email:</label>
                     <input type="email" email="email" id="email" onChange={(e) => setUsernameReg(e.target.value)} />
@@ -107,7 +107,7 @@ function LoginForm({ Login, error, CreateUser }) {
                 <input type="checkbox" value="premium" onChange={(e) => setPremium(true)}/>
                 <input type="button" onClick={createAccount} value="CREATE ACCOUNT" />
                <h2> Login </h2> 
-               {(error != "") ? ( <div className="error">{error}</div> ) : ""}
+               {(error !== "") ? ( <div className="error">{error}</div> ) : ""}
                 <div className="form-group">
                     <label htmlFor="email">Email:</label>
                     <input type="email" email="email" id="email" onChange={(e) => setUsername(e.target.value)} />
