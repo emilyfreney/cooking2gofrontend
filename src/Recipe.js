@@ -6,6 +6,7 @@ const Recipe = ({recipeID, publisher, title, image, url}) =>{
     const storeRecipe = function(){
         //TODO store recipe in database
         const request = ""; // Need to get actual url
+        // eslint-disable-next-line
         const response = fetch(request, {method: 'POST', headers: {'Content-Type': 'application/json',}, body:JSON.stringify(instanceData)})
     }
     
