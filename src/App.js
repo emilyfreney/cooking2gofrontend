@@ -51,7 +51,7 @@ const App = () => {
   }, [query])
   const retrieveRecipes = async () => {
     const response = await fetch
-          (`https://forkify-api.herokuapp.com/api/search?q=${query}`);
+          (`https://cooking-2-go.netlify.app/api/search?q=${query}`);
     const data = await response.json();
     setRecipes(data.recipes);
   };
