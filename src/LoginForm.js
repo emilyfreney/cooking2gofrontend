@@ -101,24 +101,24 @@ function LoginForm({ Login, error, CreateUser }) {
                 <h2>Create an Account</h2>
                 {(error !== "") ? ( <div className="error">{error}</div> ) : ""}
                 <div className="form-group">
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" email="email" id="email" onChange={(e) => setUsernameReg(e.target.value)} />
+                    <label htmlFor="username">username:</label>
+                    <input type="username" username="username" id="username1" onChange={(e) => setUsernameReg(e.target.value)} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password:</label>
-                    <input type="password" email="password" id="password" onChange={(e) => setPasswordReg(e.target.value)}/>
+                    <input type="password" username="password" id="password1" onChange={(e) => setPasswordReg(e.target.value)}/>
                 </div>
                 <input type="checkbox" value="premium" onChange={(e) => setPremium(true)}/>
                 <input type="button" onClick={createAccount} value="CREATE ACCOUNT" />
                <h2> Login </h2> 
                {(error !== "") ? ( <div className="error">{error}</div> ) : ""}
                 <div className="form-group">
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" email="email" id="email" onChange={(e) => setUsername(e.target.value)} />
+                    <label htmlFor="username">username:</label>
+                    <input type="username" username="username" id="username" onChange={(e) => setUsername(e.target.value)} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password:</label>
-                    <input type="password" email="password" id="password1" onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="password" username="password" id="password1" onChange={(e) => setPassword(e.target.value)}/>
                 </div>
                 <input type="submit" onClick={logInAccount} value="LOGIN" />
 
